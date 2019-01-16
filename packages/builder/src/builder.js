@@ -221,7 +221,9 @@ export default class Builder {
     consola.debug(`App root: ${this.options.srcDir}`)
 
     // Create .nuxt/, .nuxt/components and .nuxt/dist folders
-    await fsExtra.remove(r(this.options.buildDir))
+    if (this.options.keepDist) {
+      await fsExtra.remove(r(this.options.buildDir))
+    }
     const buildDirs = [r(this.options.buildDir, 'components')]
     if (!this.options.dev) {
       buildDirs.push(
