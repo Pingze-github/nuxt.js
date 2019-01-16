@@ -20,6 +20,8 @@
 
 ## 说明：这个fork的版本对dist文件的留存做了处理，不再在build前先移除之前的dist文件。
 
+在`nuxt.config.js`里配置`module.exports.keepDist=true`就可以保留之前的dist文件。
+
 ## Links
 
 - 📘 Documentation: [https://nuxtjs.org](https://nuxtjs.org)
