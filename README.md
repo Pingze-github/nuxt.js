@@ -18,6 +18,8 @@
 
 > Vue.js Meta Framework to create complex, fast & universal web applications *quickly*.
 
+## 说明：这个fork的版本对dist文件的留存做了处理，不再在build前先移除之前的dist文件。
+
 ## Links
 
 - 📘 Documentation: [https://nuxtjs.org](https://nuxtjs.org)
